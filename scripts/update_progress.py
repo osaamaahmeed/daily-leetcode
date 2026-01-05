@@ -1,6 +1,7 @@
 from pathlib import Path
 import subprocess
 from datetime import date
+from datetime import datetime, timedelta
 
 
 def count_solutions():
@@ -24,3 +25,34 @@ if __name__ == "__main__":
     print("Commit days:")
     for d in dates:
         print(d)
+
+def calculate_streaks(dates):
+    dates = [datetime.strptime(d, "%Y-%m-%d").date() for d in dates]
+    dates.sort()
+
+    longest = 0
+    current = 0
+    streak = 1
+
+    for i in range(1, len(dates)):
+        if dates[i] == dates[i - 1] + timedelta(days=1):
+            streak += 1
+        else:
+            longest = max(longest, streak)
+            streak = 1
+
+    longest = max(longest, streak)
+
+    today = date.today()
+    current = 0
+    for d in reversed(dates):
+        if d == today or d == today - timedelta(days=current):
+            current += 1
+        else:
+            break
+
+    return current, longest
+
+current, longest = calculate_streaks(dates)
+print(f"Current streak: {current}")
+print(f"Longest streak: {longest}")
