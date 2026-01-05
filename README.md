@@ -10,7 +10,15 @@ The main goal of this repository is to build **consistency** in problem solving 
 
 - **LeetCode**: https://leetcode.com/osaamaahmeed/
 
+---
 
+## 📊 Progress
+
+<!-- PROGRESS-START -->
+- Total problems solved: **7**
+- Current streak: **1 days**
+- Longest streak: **1 days**
+<!-- PROGRESS-END -->
 
 ---
 
@@ -66,17 +74,6 @@ Each problem solution includes:
 
 These solutions are written for **learning and practice purposes**.  
 If you are currently solving a LeetCode problem, try to work on it yourself before referring to any solution here.
-
----
-
-## 📊 Progress
-
-<!-- PROGRESS-START -->
-- Total problems solved: **7**
-- Current streak: **1 days**
-- Longest streak: **1 days**
-<!-- PROGRESS-END -->
-
 
 ---
 
