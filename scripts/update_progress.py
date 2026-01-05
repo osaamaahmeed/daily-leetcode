@@ -2,6 +2,7 @@ from pathlib import Path
 import subprocess
 from datetime import date
 from datetime import datetime, timedelta
+import re
 
 
 def count_solutions():
@@ -56,3 +57,28 @@ def calculate_streaks(dates):
 current, longest = calculate_streaks(dates)
 print(f"Current streak: {current}")
 print(f"Longest streak: {longest}")
+
+def update_readme(total, current, longest):
+    with open("README.md", "r", encoding="utf-8") as f:
+        content = f.read()
+
+    new_block = (
+        "<!-- PROGRESS-START -->\n"
+        f"- Total problems solved: **{total}**\n"
+        f"- Current streak: **{current} days**\n"
+        f"- Longest streak: **{longest} days**\n"
+        "<!-- PROGRESS-END -->"
+    )
+
+    content = re.sub(
+        r"<!-- PROGRESS-START -->.*?<!-- PROGRESS-END -->",
+        new_block,
+        content,
+        flags=re.DOTALL
+    )
+
+    with open("README.md", "w", encoding="utf-8") as f:
+        f.write(content)
+
+update_readme(total, current, longest)
+print("README updated.")

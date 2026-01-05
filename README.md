@@ -64,9 +64,9 @@ If you are currently solving a LeetCode problem, try to work on it yourself befo
 ## 📊 Progress
 
 <!-- PROGRESS-START -->
-- Total problems solved: **0**
-- Current streak: **0 days**
-- Longest streak: **0 days**
+- Total problems solved: **7**
+- Current streak: **1 days**
+- Longest streak: **1 days**
 <!-- PROGRESS-END -->
 
 
