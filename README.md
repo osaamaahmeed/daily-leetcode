@@ -6,6 +6,14 @@ The main goal of this repository is to build **consistency** in problem solving 
 
 ---
 
+## 🔗 Profiles
+
+- **LeetCode**: https://leetcode.com/osaamaahmeed/
+
+
+
+---
+
 ## 📌 Goals
 
 - Solve **at least one LeetCode problem every day**
