@@ -80,5 +80,19 @@ def update_readme(total, current, longest):
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(content)
 
+
+
 update_readme(total, current, longest)
-print("README updated.")
+
+import sys
+
+with open("README.md", "r", encoding="utf-8") as f:
+    updated = f.read()
+
+if "<!-- PROGRESS-START -->" not in updated:
+    print("ERROR: Progress markers missing")
+    sys.exit(1)
+
+print("README updated successfully.")
+
+

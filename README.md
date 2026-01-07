@@ -15,7 +15,7 @@ The main goal of this repository is to build **consistency** in problem solving 
 ## 📊 Progress
 
 <!-- PROGRESS-START -->
-- Total problems solved: **7**
+- Total problems solved: **9**
 - Current streak: **1 days**
 - Longest streak: **1 days**
 <!-- PROGRESS-END -->
