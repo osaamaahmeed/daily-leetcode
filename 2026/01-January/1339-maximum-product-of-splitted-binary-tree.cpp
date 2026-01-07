@@ -7,7 +7,7 @@
     - We have a Binary Tree and we want to remove 1 edge
     - By removing this edge we create 2 sperate Binary Trees
     - We want to calculate the sum of each tree and muliply each summition
-    - We now want the max product
+    - We now want the max product.
 */
 
 /* Approach:
